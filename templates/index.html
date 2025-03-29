@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="fade-in">
+        <h1>Привет, я AKETSU</h1>
+        <p class="subtitle">Мне {{ age }} лет</p>
+    </header>
+
+    <section class="card fade-in delay-1">
+        <h2>Образование</h2>
+        <ul>
+            <li>Яндекс Лицей: Основы программирования на Python (Д23)</li>
+            <li>Яндекс Лицей: Основы промышленного программирования (Д24)</li>
+            <li>Мини-курсы на Stepik</li>
+        </ul>
+    </section>
+
+    <section class="card fade-in delay-2">
+        <h2>Навыки</h2>
+        <div class="skills">
+            <div class="skill-category">
+                <h3>Программирование</h3>
+                <ul>
+                    <li>Python (основной язык)</li>
+                    <li>Flask, FastAPI (веб-разработка)</li>
+                    <li>Java (моды, плагины для Minecraft)</li>
+                    <li>Sql (SQLITE), SqlAlchemy</li>
+                    <li>PyQT, Pygame</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Другое</h3>
+                <ul>
+                    <li>HTML (базовый уровень)</li>
+                    <li>SQL, SQLAlchemy</li>
+                    <li>Telegram API (боты/юзерботы)</li>
+                    <li>Linux (основы работы с терминалом)</li>
+                    <li>Git, GitHub</li>
+                    <li>Ngrok и аналоги</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade-in delay-3">
+        <div class="card projects-section">
+            <h2>Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Проекты из Яндекс Лицея</h3>
+                    <p>Совместные проекты с напарником, выполненные во время обучения в Яндекс Лицее по курсам Python и
+                        промышленного программирования.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Mikhail716662/Project_WEB_Naumov_Anchutin" class="link" target="_blank">Репозиторий
+                            1 (еще дорабатывается)</a>
+                        <a href="https://github.com/Mikhail716662/Project_PyGame_Naumov-Aketsu" class="link" target="_blank">Репозиторий
+                            2</a>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Pygame</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Этот сайт-резюме ^_^</h3>
+                    <p>Минималистичное резюме с анимациями, написанное на Flask. Адаптивный дизайн, чистый код.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/AKETSU-main/Bio-site" class="link" target="_blank">Исходный
+                            код</a>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card fade-in delay-4">
+        <h2>Контакты</h2>
+        <div class="contacts">
+            <p>Telegram: <a href="https://t.me/aketsu_1" class="link">@aketsu_1</a></p>
+            <p>Email: <a href="mailto:hzhss621@gmail.com" class="link">hzhss621@gmail.com</a></p>
+        </div>
+    </section>
+</div>
+
+<script src="{{ url_for('static', filename='js/animations.js') }}"></script>
+</body>
+</html>
